@@ -31,14 +31,13 @@ function createBot() {
     bot.loadPlugin(cmd);
 
     bot.on('login', function() {
-        console.log("Logged In");
+        console.log("hahowadkheel");
         connected = true;
-        bot.chat("hello");
     });
 
     bot.on('time', function(time) {
-        if (nightskip == "true" && bot.time.timeOfDay >= 13000) {
-            bot.chat('/time set day');
+        if (nightskip == "false" && bot.time.timeOfDay >= 13000) {
+            bot.chat('shush');
         }
 
         if (!connected) return;
@@ -64,21 +63,21 @@ function createBot() {
     });
 
     bot.on('kicked', function(reason, loggedIn) {
-        console.log("Bot was kicked from the server. Reconnecting...");
+        console.log("Bot was kicked from the server. tryna n3wodo Reconnecting...");
         connected = false;
-        setTimeout(createBot, 5000); // Reconnect after 5 seconds
+        setTimeout(createBot, 5000); // Reconnect after 2 seconds
     });
 
     bot.on('error', function(err) {
-        console.log("Error occurred:", err);
-        console.log("Attempting to log in again...");
+        console.log("Erragianbruh:", err);
+        console.log("knhawlo bruuh...");
         connected = false;
-        setTimeout(createBot, 5000); // Retry after 5 seconds on error
+        setTimeout(createBot, 5000); // Retry after 2 seconds on error
     });
 }
 
 function startBot() {
-    console.log("Attempting to log in...");
+    console.log("BRUUUUUH...");
     createBot(); // Attempt to create a bot instance
 }
 

@@ -37,7 +37,6 @@ function createBot() {
 
     bot.on('time', function(time) {
         if (nightskip == "false" && bot.time.timeOfDay >= 13000) {
-            bot.chat('shush');
         }
 
         if (!connected) return;

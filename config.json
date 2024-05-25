@@ -2,5 +2,5 @@
 	"ip":"StawrmSMP.aternos.me",
 	"port": "55752",
 	"name": "coldpalmer",
-	"auto-night-skip":"true"
+	"auto-night-skip":"false"
 }
